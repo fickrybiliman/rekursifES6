@@ -7,3 +7,4 @@
 5.  Exercise Hapus Simbol (Regex)
 6.  Exercise Cari Pelaku (Regex)
 7.  Exercise Membuat Class ES6 Sederhana
+8.  Exercise Membuat Class ES6 Lanjutan
