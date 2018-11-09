@@ -33,6 +33,11 @@ class Student {
       this.Hobbies.push(newHobby);
    }
 
+   removeHobby(hobby) {
+      let hobbyIndex = this.Hobbies.indexOf(hobby);
+      this.Hobbies.splice(hobbyIndex, 1);
+   }
+
    getData() {
       return  `Nama : ${this.name} \nUmur : ${this.age} \nTanggal Lahir : ${this.dateOfBirth} \nJenis kelamin : ${this.gender} \nId : ${this.studentID} \nHobby : ${this.Hobbies}`;
    }
@@ -41,5 +46,6 @@ class Student {
 let fickry = new Student('Fickry Bil Iman', 37, '07 Oktober 1981', 'Male', '007', 'Badminton');
 fickry.addHobby('Coding');
 fickry.addHobby('Gaming');
-fickry.setGender('Cowok');
+// fickry.setGender('Cowok');
+fickry.removeHobby('Badminton');
 console.log(fickry.getData());
